@@ -1,0 +1,120 @@
+\begin{tikzpicture}[scale=.33,every node/.style={minimum size=1cm},on grid]
+\definecolor{base01}{RGB}{88,110,117}
+\definecolor{base02}{RGB}{7,54,66}
+\definecolor{base03}{RGB}{0,43,54}
+\definecolor{cyan}{RGB}{195, 236, 255}
+\definecolor{blue}{RGB}{208, 240, 192}
+
+    \begin{scope}[yshift=-8mm, node/.append style={yslant=0.5,xslant=-0.7},
+                    yslant=0.5,xslant=-0.7]
+        \draw[step=10mm, base03, dashed, thick] (0,0) grid (4,4);
+        \draw[draw=base03, fill=blue, thick] (0,0) rectangle (1,1);
+        \draw[draw=base03, fill=blue, thick] (0,1) rectangle (1,2);
+        \draw[draw=base03, fill=blue, thick] (0,2) rectangle (1,3);
+        \draw[draw=base03, fill=blue, thick] (0,3) rectangle (1,4);
+        \draw[draw=base03, fill=blue, thick] (1,0) rectangle (2,1);
+        \draw[draw=base03, fill=blue, thick] (1,1) rectangle (2,2);
+        \draw[draw=base03, fill=blue, thick] (1,2) rectangle (2,3);
+        \draw[draw=base03, fill=blue, thick] (1,3) rectangle (2,4);
+        \draw[draw=base03, fill=blue, thick] (2,0) rectangle (3,1);
+        \draw[draw=base03, fill=blue, thick] (2,1) rectangle (3,2);
+        \draw[draw=base03, fill=blue, thick] (2,2) rectangle (3,3);
+        \draw[draw=base03, fill=blue, thick] (2,3) rectangle (3,4);
+        \draw[draw=base03, fill=blue, thick] (3,0) rectangle (4,1);
+        \draw[draw=base03, fill=blue, thick] (3,1) rectangle (4,2);
+        \draw[draw=base03, fill=blue, thick] (3,2) rectangle (4,3);
+        \draw[draw=base03, fill=blue, thick] (3,3) rectangle (4,4);
+
+
+        \foreach \x in { 0,\number\numexpr 0+1,...,\number\numexpr 3-1 } {
+            \foreach \y in { 1,\number\numexpr 1+1,...,\number\numexpr 4-1 } {
+                \draw[fill=base02, opacity=0.4] (\x,\y) rectangle
+                                        (\x+1,\y+1);
+            }
+        }
+        \draw[step=10mm, base03, thick] (0, 1) grid
+                                        (3, 4);
+        
+        \coordinate (BL2) at (0,1);
+        \coordinate (TL2) at (0,4);
+    \end{scope}
+
+    \begin{scope}[yshift=-4mm, node/.append style={yslant=0.5,xslant=-0.7},
+                    yslant=0.5,xslant=-0.7]
+        \draw[step=10mm, base03, dashed, thick] (0,0) grid (4,4);
+        \draw[draw=base03, fill=blue, thick] (0,0) rectangle (1,1);
+        \draw[draw=base03, fill=blue, thick] (0,1) rectangle (1,2);
+        \draw[draw=base03, fill=blue, thick] (0,2) rectangle (1,3);
+        \draw[draw=base03, fill=blue, thick] (0,3) rectangle (1,4);
+        \draw[draw=base03, fill=blue, thick] (1,0) rectangle (2,1);
+        \draw[draw=base03, fill=blue, thick] (1,1) rectangle (2,2);
+        \draw[draw=base03, fill=blue, thick] (1,2) rectangle (2,3);
+        \draw[draw=base03, fill=blue, thick] (1,3) rectangle (2,4);
+        \draw[draw=base03, fill=blue, thick] (2,0) rectangle (3,1);
+        \draw[draw=base03, fill=blue, thick] (2,1) rectangle (3,2);
+        \draw[draw=base03, fill=blue, thick] (2,2) rectangle (3,3);
+        \draw[draw=base03, fill=blue, thick] (2,3) rectangle (3,4);
+        \draw[draw=base03, fill=blue, thick] (3,0) rectangle (4,1);
+        \draw[draw=base03, fill=blue, thick] (3,1) rectangle (4,2);
+        \draw[draw=base03, fill=blue, thick] (3,2) rectangle (4,3);
+        \draw[draw=base03, fill=blue, thick] (3,3) rectangle (4,4);
+
+
+        \foreach \x in { 0,\number\numexpr 0+1,...,\number\numexpr 3-1 } {
+            \foreach \y in { 1,\number\numexpr 1+1,...,\number\numexpr 4-1 } {
+                \draw[fill=base02, opacity=0.4] (\x,\y) rectangle
+                                        (\x+1,\y+1);
+            }
+        }
+        \draw[step=10mm, base03, thick] (0, 1) grid
+                                        (3, 4);
+    \end{scope}
+    \begin{scope}[node/.append style={yslant=0.5,xslant=-0.7},
+                    yslant=0.5,xslant=-0.7]
+        \draw[step=10mm, base03, dashed, thick] (0,0) grid (4,4);
+        \draw[draw=base03, fill=blue, thick] (0,0) rectangle (1,1);
+        \draw[draw=base03, fill=blue, thick] (0,1) rectangle (1,2);
+        \draw[draw=base03, fill=blue, thick] (0,2) rectangle (1,3);
+        \draw[draw=base03, fill=blue, thick] (0,3) rectangle (1,4);
+        \draw[draw=base03, fill=blue, thick] (1,0) rectangle (2,1);
+        \draw[draw=base03, fill=blue, thick] (1,1) rectangle (2,2);
+        \draw[draw=base03, fill=blue, thick] (1,2) rectangle (2,3);
+        \draw[draw=base03, fill=blue, thick] (1,3) rectangle (2,4);
+        \draw[draw=base03, fill=blue, thick] (2,0) rectangle (3,1);
+        \draw[draw=base03, fill=blue, thick] (2,1) rectangle (3,2);
+        \draw[draw=base03, fill=blue, thick] (2,2) rectangle (3,3);
+        \draw[draw=base03, fill=blue, thick] (2,3) rectangle (3,4);
+        \draw[draw=base03, fill=blue, thick] (3,0) rectangle (4,1);
+        \draw[draw=base03, fill=blue, thick] (3,1) rectangle (4,2);
+        \draw[draw=base03, fill=blue, thick] (3,2) rectangle (4,3);
+        \draw[draw=base03, fill=blue, thick] (3,3) rectangle (4,4);
+
+
+        \foreach \x in { 0,\number\numexpr 0+1,...,\number\numexpr 3-1 } {
+            \foreach \y in { 1,\number\numexpr 1+1,...,\number\numexpr 4-1 } {
+                \draw[fill=base02, opacity=0.4] (\x,\y) rectangle
+                                        (\x+1,\y+1);
+            }
+        }
+        \draw[step=10mm, base03, thick] (0, 1) grid
+                                        (3, 4);
+        \coordinate (BL) at (0,1);
+        \coordinate (BR) at (3,1);
+        \coordinate (TL) at (0,4);
+        \coordinate (TR) at (3,4);
+    \end{scope}
+    
+    \draw (TL) -- (TL2) (BL) -- (BL2);
+
+    \begin{scope}[xshift=0, yshift=5cm,
+                    every node/.append style={yslant=0.5,xslant=-0.7},
+                    yslant=0.5,xslant=-0.7]
+        \draw (BL) -- (0,1) (BR) -- (1,1)
+              (TL) -- (0,2) (TR) -- (1,2);
+        \draw[fill=cyan] (0,0) rectangle (2,2);
+        \draw[step=10mm, base03, thick] (0,0) grid (2,2);
+        \draw[fill=base02, opacity=0.4] (0,1) rectangle
+                                        (1,2);
+        \draw[base03, thick] (0,1) rectangle (1,2);
+    \end{scope}
+\end{tikzpicture}
