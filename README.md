@@ -20,5 +20,5 @@ The source code for the sencond part of the thesis regarding text retrieval mode
 
 ### :closed_book:	LaTeX Compilation
 
-The source code can be compiled into PDF file using pdfLaTex by running `pdflatex thesis.tex` from `src` directory or importing it into [Overleaf](https://www.overleaf.com/). The compiled PDF file is available in this repository as [Thesis.pdf](https://github.com/soCzech/MasterThesis/blob/main/Thesis.pdf) or in [Charles University Digital repository](https://dspace.cuni.cz/handle/20.500.11956/121024).
+The source code can be compiled into PDF file using pdfLaTex by running `pdflatex thesis.tex; bibtex thesis.aux; pdflatex thesis.tex; pdflatex thesis.tex` from `src` directory or importing it into [Overleaf](https://www.overleaf.com/). The compiled PDF file is available in this repository as [Thesis.pdf](https://github.com/soCzech/MasterThesis/blob/main/Thesis.pdf) or in [Charles University Digital repository](https://dspace.cuni.cz/handle/20.500.11956/121024).
 

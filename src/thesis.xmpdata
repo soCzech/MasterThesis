@@ -1,7 +1,6 @@
 % Metadata to be stored in PDF, see documentation of the pdfx package for more details.
 
-\Author{Name Surname}
-\Title{Thesis title}
-\Keywords{keywords\sep more such\sep yet another}
-\Subject{Abstract of thesis}
+\Author{Bc. Tomas Soucek}
+\Title{Deep Learning-Based Approaches for Shot Transition Detection and Known-Item Search in Video}
 \Publisher{Charles University}
+
